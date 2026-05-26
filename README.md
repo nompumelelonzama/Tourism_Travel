@@ -1,4 +1,5 @@
 Smart Tourism-travel ZA 🌍
+
 A next-generation, AI-driven Smart Tourism and Hospitality application focused on South Africa. This application leverages advanced cloud APIs, computer vision, data structures, and role-based access controls to create an all-in-one ecosystem for tourists, accommodation managers, and system administrators.
 
 🚀 Key Features
