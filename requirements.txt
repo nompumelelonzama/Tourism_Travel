@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+plotly
+requests
+scikit-learn
+folium
+streamlit-folium
+Pillow
+opencv-python-headless
+matplotlib
+wordcloud
+fpdf
+textblob
