@@ -3,8 +3,6 @@
 
 ### AI-Powered Tourism & Hospitality Intelligence Platform for South Africa
 
-Smart Tourism Travel ZA is an advanced AI-driven tourism and hospitality platform designed to modernize travel experiences across South Africa. The application combines artificial intelligence, real-time APIs, computer vision, interactive geospatial mapping, and analytics into a unified smart tourism ecosystem for travelers, hotel managers, and administrators.
-
 *Real-time weather · AI chatbot · Landmark detection · Interactive maps · Booking analytics · Executive reporting*
 
 
