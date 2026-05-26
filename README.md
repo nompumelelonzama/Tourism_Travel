@@ -160,25 +160,6 @@ One-click generation of a multi-page professional PDF report.
   └────────┘ └────────┘ └───────┘ └────────┘   └──────────┘
 ```
 
-### Database Schema
-
-```sql
--- Users table
-users (id, username, password_hash, role, email, full_name, created_at, last_login, is_active)
-
--- Bookings table  
-bookings (id, user, hotel, city, cost, booking_date, lead_time, prev_cancels,
-          satisfaction, status, refunded, flagged, flag_reason)
-```
-
----
-\
-Open [http://localhost:8501](http://localhost:8501) in your browser.
-
----
-
-> ✅ **All API keys are optional.** The application runs entirely in demo/mock mode with no keys configured. Features that require a key display a clear notice and fall back to realistic sample data.
-
 ## 🔑 Role Permissions
 
 | Feature | Tourist 🌍 | Hotel Manager 🏨 | Admin 🛡️ |
@@ -233,29 +214,6 @@ Performs Landmark Detection, Label Detection, and Object Localisation on uploade
 
 ### Google Maps & Places API
 Used for hotel map tile rendering and destination detail enrichment via Folium.
-
----
-
-## 🚀 Deployment
-
-### Streamlit Community Cloud (Recommended)
-
-1. Fork or push the repository to your GitHub account.
-2. Go to [share.streamlit.io](https://share.streamlit.io) and click **New app**.
-3. Connect your repository and set `app.py` as the main file.
-4. Under **Advanced settings → Secrets**, paste the full contents of your `secrets.toml`.
-5. Click **Deploy** — the app will be live within a few minutes.
-
-
-### Environment Variables (Alternative to secrets.toml)
-
-If deploying without Streamlit Cloud, export API keys as environment variables:
-
-```bash
-export OPENWEATHER_API_KEY="your_key"
-export ANTHROPIC_API_KEY="your_key"
-streamlit run app.py
-```
 
 ---
 
