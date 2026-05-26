@@ -1,4 +1,4 @@
-﻿streamlit
+streamlit
 pandas
 numpy
 plotly
@@ -11,3 +11,4 @@ opencv-python-headless
 matplotlib
 wordcloud
 fpdf
+textblob
