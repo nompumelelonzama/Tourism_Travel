@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit
 pandas
 numpy
@@ -12,3 +13,19 @@ matplotlib
 wordcloud
 fpdf
 textblob
+=======
+streamlit
+pandas
+numpy
+plotly
+requests
+scikit-learn
+folium
+streamlit-folium
+Pillow
+opencv-python-headless
+matplotlib
+wordcloud
+fpdf
+textblob
+>>>>>>> fac0a472dd65abb6c62d32d6332a1cdbe873dcc4
