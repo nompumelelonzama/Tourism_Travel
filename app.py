@@ -1,4 +1,5 @@
 
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -46,6 +47,7 @@ GOOGLE_VISION_API_KEY = os.environ.get("GOOGLE_VISION_API_KEY", "YOUR_GOOGLE_VIS
 GOOGLE_PLACES_API_KEY = os.environ.get("GOOGLE_PLACES_API_KEY", "YOUR_GOOGLE_PLACES_KEY")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "YOUR_OPENAI_KEY")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "YOUR_ANTHROPIC_KEY")
+
 # ======================================================
 # PROFESSIONAL UI STYLING
 # ======================================================
@@ -1925,11 +1927,6 @@ def generate_detailed_report(df, reviews_data, hotels_df):
         except: pass
     return report_path
 
-    main()
 
-    
-
-
-
-
-
+if __name__ == "__main__":
+      main()
