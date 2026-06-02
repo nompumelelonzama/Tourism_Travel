@@ -1925,7 +1925,7 @@ def generate_detailed_report(df, reviews_data, hotels_df):
         except: pass
     return report_path
 
-
+    main()
 
     
 
