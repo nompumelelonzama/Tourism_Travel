@@ -1926,7 +1926,7 @@ def generate_detailed_report(df, reviews_data, hotels_df):
     return report_path
 
 
-if __name__ == "__main__":
+
     
 
 
