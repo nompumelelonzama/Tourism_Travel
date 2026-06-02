@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 import streamlit as st
 import pandas as pd
@@ -7126,5 +7126,4 @@ def generate_detailed_report(df, reviews_data, hotels_df):
 
 
 if __name__ == "__main__":
->>>>>>> fac0a472dd65abb6c62d32d6332a1cdbe873dcc4
     main()
