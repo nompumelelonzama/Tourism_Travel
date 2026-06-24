@@ -138,25 +138,6 @@ One-click generation of a multi-page professional PDF report.
 
 ---
 
-## 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        Streamlit Frontend                       │
-│   Tourist View │ Hotel Manager View │ Admin View                │
-└────────────────────────┬────────────────────────────────────────┘
-                         │
-┌────────────────────────▼────────────────────────────────────────┐
-│                      Application Layer                          │
-│  Auth │ Weather │ Chatbot │ Landmark │ Map │ Booking │ Reports  │
-└──────┬──────────┬──────────┬──────────┬──────────────┬──────────┘
-       │          │          │          │              │
-  ┌────▼───┐ ┌───▼────┐ ┌───▼───┐ ┌───▼────┐   ┌────▼─────┐
-  │SQLite  │ │OpenWx  │ │Claude │ │Google  │   │scikit-   │
-  │tourism │ │API     │ │/ GPT  │ │Vision  │   │learn ML  │
-  │_ai.db  │ │        │ │API    │ │API     │   │Models    │
-  └────────┘ └────────┘ └───────┘ └────────┘   └──────────┘
-```
 
 ## 🔑 Role Permissions
 
@@ -196,50 +177,6 @@ The app covers weather, landmark data, and travel advice for the following citie
 
 ---
 
-## 🔌 API Integrations
-
-### OpenWeather API
-Provides current conditions and 5-day forecasts. Endpoint used: `/data/2.5/weather` and `/data/2.5/forecast`. Mock data is provided for all 8 cities when the key is absent.
-
-### Anthropic Claude (`claude-3-5-haiku-20241022`)
-Primary LLM for the Zara chatbot. Sends up to 10 messages of conversation history per request. Falls back to OpenAI if unavailable.
-
-### OpenAI (`gpt-4o-mini`)
-Secondary LLM. Used when Anthropic API is unavailable or not configured.
-
-### Google Vision API
-Performs Landmark Detection, Label Detection, and Object Localisation on uploaded images. Returns name, confidence score, and GPS coordinates for identified landmarks.
-
-### Google Maps & Places API
-Used for hotel map tile rendering and destination detail enrichment via Folium.
-
----
-
-## 🔒 Security Considerations
-
-- All passwords are hashed with **SHA-256** before storage — plaintext passwords are never persisted.
-- Never commit `.streamlit/secrets.toml` — add it to `.gitignore`.
-- Default demo credentials should be changed or removed before any public production deployment.
-- Consider adding rate limiting and HTTPS termination (e.g. via Nginx or a cloud load balancer) for production environments.
-
----
-
-## 📦 Requirements
-
-A `requirements.txt` for this project should include:
-
-```
-streamlit>=1.30.0
-pandas>=2.0.0
-numpy>=1.24.0
-plotly>=5.18.0
-scikit-learn>=1.3.0
-textblob>=0.17.1
-wordcloud>=1.9.3
-matplotlib>=3.7.0
-Pillow>=10.0.0
-folium>=0.15.0
-streamlit-folium>=0.15.0
 fpdf>=1.7.2
 requests>=2.31.0
 ```
